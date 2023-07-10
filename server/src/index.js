@@ -12,10 +12,6 @@ app.use(cors());
 app.use("/auth",userRouter);
 app.use("/recipes",recipesRouter);
 
-mongoose.connect("mongodb+srv://aryanray1405:Aryan123@recipes.4fypwkz.mongodb.net/recipes?retryWrites=true&w=majority",
-{
-    useNewUrlParser:true,
-    useUnifiedTopology:true,
-});
+
 
 app.listen(3001, ()=> console.log("SERVER STARTED!"));
